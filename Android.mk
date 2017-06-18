@@ -1,5 +1,37 @@
 # Copyright (C) 2017 andr68rus
-#
 
 LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := Ax
+LOCAL_MODULE_OWNER := Android
+LOCAL_SRC_FILES := priv-app/Ax/Ax.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := AxUI
+LOCAL_MODULE_OWNER := Android
+LOCAL_SRC_FILES := priv-app/AxUI/AxUI.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ViPER4Android
+LOCAL_MODULE_OWNER := Android
+LOCAL_SRC_FILES := priv-app/ViPER4Android/ViPER4Android.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
 

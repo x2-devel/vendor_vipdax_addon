@@ -16,3 +16,8 @@ VENDOR_PATH := vendor/letv/vipdax
 
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,${LOCAL_PATH}/proprietary,system)
+
+PRODUCT_PACKAGES += \
+    Ax \
+    AxUI \
+    ViPER4Android
