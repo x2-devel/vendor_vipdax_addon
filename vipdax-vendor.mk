@@ -12,12 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-VENDOR_PATH := vendor/letv/vipdax
+VENDOR_PATH := vendor/leeco/vipdax
 
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,${LOCAL_PATH}/proprietary,system)
 
 PRODUCT_PACKAGES += \
     Ax \
-    AxUI \
-    ViPER4Android
+    AxUI

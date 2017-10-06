@@ -152,9 +152,6 @@ effects {
 #        ...
 #    }
 
-pre_processing {
-    voice_communication {
-        aec {}
-        ns {}
-    }
-}
+#
+# TODO: add default audio pre processor configurations after debug and tuning phase
+#
